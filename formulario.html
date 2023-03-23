@@ -15,20 +15,20 @@
                     <button type="button" class="toggle-btn button-box" onclick="login()">Iniciar Sesión</button>
                     <button type="button" class="toggle-btn button-box" onclick="registrar()">Registrar</button>
                 </div>
-                <form id="login" class="input-group" method="post" action="http://localhost/pruebas/login.php">
-                    <input type="text" name="user" class="input-field" placeholder="Nombre de Usuario" required>
-                    <input type="password" name="contraseña" class="input-field" placeholder="Contraseña" required>
-                    <input type="checkbox" class="check-box"><span>Recordar Contraseña.</span>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                    <input type="password" class="input-field" placeholder="Contraseña" required>
+                    <p><input type="checkbox" class="check-box">Recordar Contraseña.</p>
                     <button type="submit" class="submit-btn">Acceder</button>
                 </form>
-                <form id="registrar" class="input-group" method="post" action="http://localhost/pruebas/registro.php">
-                    <input type="text" name="nombre" class="input-field" placeholder="Nombre" required>
-                    <input type="text" name="apellido" class="input-field" placeholder="Apellido" required>
-                    <input type="text" name="user" class="input-field" placeholder="Nombre de Usuario" required>
-                    <input type="email" name="correo" class="input-field" placeholder="Correo" required>
-                    <input type="text" name="telefono" class="input-field" placeholder="Teléfono" required>
-                    <input type="password" name="contraseña" class="input-field" placeholder="Contraseña" required>
-                    <input type="checkbox" class="check-box"><span>Acepto los términos y condiciones.</span>
+                <form id="registrar" class="input-group">
+                    <input type="text" class="input-field" placeholder="Nombre" required>
+                    <input type="text" class="input-field" placeholder="Apellido" required>
+                    <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                    <input type="email" class="input-field" placeholder="Correo" required>
+                    <input type="text" class="input-field" placeholder="Teléfono" required>
+                    <input type="password" class="input-field" placeholder="Contraseña" required>
+                    <p><input type="checkbox" class="check-box">Acepto los términos y condiciones.</p>
                     <button type="submit" class="submit-btn">Enviar</button>
                 </form>
             </div>
