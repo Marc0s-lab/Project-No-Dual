@@ -8,30 +8,28 @@
     <title>Registro</title>
 </head>
 <body>
-    <div class="container">
-        <div class="from-box">
-            <div class="">
-                <div id="elegir">
-                    <button type="button" class="toggle-btn button-box" onclick="login()">Iniciar Sesión</button>
-                    <button type="button" class="toggle-btn button-box" onclick="registrar()">Registrar</button>
+    <div class="contenedor">
+        <div class="rectangulo">
+            <div id="elegir">
+                <button type="button" class="posicion button-box" onclick="login()">Iniciar Sesión</button>
+                <button type="button" class="posicion button-box" onclick="registrar()">Registrar</button>
                 </div>
-                <form id="login" class="input-group">
-                    <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
-                    <input type="password" class="input-field" placeholder="Contraseña" required>
-                    <p><input type="checkbox" class="check-box">Recordar Contraseña.</p>
-                    <button type="submit" class="submit-btn">Acceder</button>
-                </form>
-                <form id="registrar" class="input-group">
-                    <input type="text" class="input-field" placeholder="Nombre" required>
-                    <input type="text" class="input-field" placeholder="Apellido" required>
-                    <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
-                    <input type="email" class="input-field" placeholder="Correo" required>
-                    <input type="text" class="input-field" placeholder="Teléfono" required>
-                    <input type="password" class="input-field" placeholder="Contraseña" required>
-                    <p><input type="checkbox" class="check-box">Acepto los términos y condiciones.</p>
-                    <button type="submit" class="submit-btn">Enviar</button>
-                </form>
-            </div>
+            <form id="login" class="formulario">
+                <input type="text" class="relleno" placeholder="Nombre de Usuario" required>
+                <input type="password" class="relleno" placeholder="Contraseña" required>
+                <p><input type="checkbox" class="condicion">Recordar Contraseña.</p>
+                <button type="submit" class="submit">Acceder</button>
+            </form>
+            <form id="registrar" class="formulario">
+                <input type="text" class="relleno" placeholder="Nombre" minlength="3" maxlength="20" pattern="[a-zA-Z]+" required>
+                <input type="text" class="relleno" placeholder="Apellido" minlength="5" maxlength="40" pattern="[a-zA-Z]+" required>
+                <input type="text" class="relleno" placeholder="Nombre de Usuario" required>
+                <input type="email" class="relleno" placeholder="Correo" required>
+                <input type="text" class="relleno" placeholder="Teléfono" pattern="[0-9]{9}" required>
+                <input type="password" class="relleno" placeholder="Contraseña" required>
+                <p><input type="checkbox" class="condicion">Acepto los términos y condiciones.</p>
+                <button type="submit" class="submit">Enviar</button>
+            </form>
         </div>
     </div>
     <script>
